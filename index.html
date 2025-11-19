@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>沈琪 - 前端工程师简历</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- 侧边栏个人信息 -->
+        <aside class="sidebar">
+            <div class="profile-section">
+                <div class="avatar">
+                   <!--  <i class="fas fa-user"></i> -->
+                    <img src="avatar.png" class="avatar" alt="Avatar">
+                </div>
+                <h1 class="name">沈琪</h1>
+                <p class="title">前端开发工程师</p>
+                <p class="subtitle">东南大学 计算机科学与技术 硕士在读</p>
+            </div>
+            
+            <div class="contact-section">
+                <h2>联系方式</h2>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+86 15880663622</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>shenqi@braintell.cn</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>英语:CET-6/IETLS</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-trophy"></i>
+                    <span>github: miracle-shen</span>
+                </div>
+            </div>
+            
+            <div class="skills-section">
+                <h2>技能专长</h2>
+                <div class="skill-item">
+                    <span class="skill-name">Python & PyTorch</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" data-level="95"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">JavaScript/TypeScript</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" data-level="92"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">Vue & React</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" data-level="88"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">C/C++</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" data-level="85"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">Node.js</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" data-level="80"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="awards-section">
+                <h2>主要荣誉</h2>
+                <div class="award-item">
+                    <i class="fas fa-medal"></i>
+                    <span>省级三好学生</span>
+                </div>
+                <div class="award-item">
+                    <i class="fas fa-medal"></i>
+                    <span>校级一等奖学金</span>
+                </div>
+                <div class="award-item">
+                    <i class="fas fa-medal"></i>
+                    <span>研究生二等学业奖学金</span>
+                </div>
+                <div class="award-item">
+                    <i class="fas fa-trophy"></i>
+                    <span>全国AI创意赛二等奖</span>
+                </div>
+            </div>
+        </aside>
+        
+        <!-- 主要内容区域 -->
+        <main class="main-content">
+            <!-- 个人简介 -->
+            <section class="section about-section">
+                <h2 class="section-title">
+                    <i class="fas fa-user-circle"></i>
+                    个人简介
+                </h2>
+                <div class="section-content">
+                    <p>东南大学计算机科学与技术硕士在读。具备丰富的前端开发经验和深度学习研究背景，熟练掌握Vue、React、Python等技术栈。曾在腾讯金融科技部门实习，负责高PV移动端页面开发。在AI领域有深入研究，发表多篇学术论文，多次获得国家级竞赛奖项。具备优秀的团队协作能力和项目管理经验。</p>
+                </div>
+            </section>
+            
+            <!-- 实习经历 -->
+            <section class="section experience-section">
+                <h2 class="section-title">
+                    <i class="fas fa-briefcase"></i>
+                    实习经历
+                </h2>
+                <div class="section-content">
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h3>前端开发实习生</h3>
+                            <span class="company">腾讯 | 金融科技 | 理财通</span>
+                            <span class="date">2025.05 - 2025.10</span>
+                        </div>
+                        <div class="experience-content">
+                            <p class="work-summary">负责移动端高PV页面（月均曝光用户数18-19w）业务的功能迭代、体验优化与稳定性建设。采用四层架构设计模式，基于Vue3 + Pinia + Tailwind完成重构和开发。</p>
+                            <div class="project-group">
+                                <h4>P1产品需求：定投全链路逻辑下沉</h4>
+                                <ul>
+                                    <li>核心功能一码三端H5开发：负责详情/修改/计划列表页面，完成10+新页面组件开发，复用20+公共组件；首屏加载（LCP）从1800ms降低到1400ms</li>
+                                    <li>定投数据层开发：使用Pinia管理用户订单数据，计划状态数据、交易列表数据等关键业务数据并主动缓存</li>
+                                    <li>定投交互体验优化：用户下单交互（前端数据校验）、管理计划交互（验密）、资产分析曲线图渲染能力原生化</li>
+                                </ul>
+                            </div>
+                            <div class="project-group">
+                                <h4>P0产品需求：定投限额扣款提醒</h4>
+                                <ul>
+                                    <li>跨系统方案设计：协调前端、投放系统、公告系统三方资源，设计"限额触发-提醒推送-公告同步"方案</li>
+                                    <li>会员三端二维码元素差异化设计：针对APP端无法拉起二维码扫描功能，修改为按钮添加好友组件</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- 项目经历 -->
+            <section class="section projects-section">
+                <h2 class="section-title">
+                    <i class="fas fa-code"></i>
+                    项目经历
+                </h2>
+                <div class="section-content">
+                    <div class="project-item">
+                        <div class="project-header" onclick="toggleProject(this)">
+                            <h3>基于React音乐流媒体Web应用开发</h3>
+                            <span class="date">2025.03 - 2025.04</span>
+                            <i class="fas fa-chevron-down toggle-icon"></i>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Redux</span>
+                                <span class="tag">TailWind</span>
+                                <span class="tag">Vite</span>
+                            </div>
+                            <p class="project-description">
+                                支持按音乐风格获取全球音乐数据，实现网页完整的音乐播放控制功能。
+                            </p>
+                            <ul class="project-achievements">
+                                <li>音乐风格筛选：实现下拉式音乐风格选择器，集成多个Shazam Core API获取对应风格的音乐数据，利用localStorage缓存机制减少重复请求</li>
+                                <li>播放器组件：完整的播放/暂停控制、进度调节、音量控制，支持循环/随机播放模式，歌曲信息展示</li>
+                                <li>复用性音乐卡片：封装音乐卡片组件，通过group-hover实现按钮的悬停交互效果</li>
+                                <li>优化页面渲染：利用grid布局实现响应式样式；利用react-window实现虚拟列表渲染</li>
+                            </ul>
+                            <div class="project-demo">
+                                <strong>项目Demo:</strong> <a href="https://miracle-music.netlify.app" target="_blank">https://miracle-music.netlify.app</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-item">
+                        <div class="project-header" onclick="toggleProject(this)">
+                            <h3>新基石研究员项目</h3>
+                            <span class="date">2023.09 - 2025.03</span>
+                            <i class="fas fa-chevron-down toggle-icon"></i>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">PyTorch</span>
+                                <span class="tag">3D点云</span>
+                                <span class="tag">神经网络</span>
+                                <span class="tag">FPGA</span>
+                            </div>
+                            <p class="project-description">
+                                设计神经元结构自动化标注算法，首创将3D点云分割网络应用于神经元结构数据，降低人工标注成本90%以上。
+                            </p>
+                            <ul class="project-achievements">
+                                <li>设计了树状结构数据的特定采样方法：终端点-胞体结构引导采样，实现生物学特征引导的采样机制</li>
+                                <li>设计了基于神经元拓扑结构的邻居选择模块：基于真实的父子节点关系进行有效邻居选择</li>
+                                <li>搭建了完整的基于生物学结构合理性的预测结果矫正流程：实现端到端完整的标注流程</li>
+                                <li>基于FPGA芯片探索AI应用加速；开发chat聊天框：完成大模型流式输出对话管理，支持文件上传功能</li>
+                                <li>接入大模型API，搭建循环工作流，实现神经元固定数据格式的追踪代码生成</li>
+                            </ul>
+                            <div class="project-demo">
+                                <strong>学术成果:</strong> Nature NeuroScience在投
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-item">
+                        <div class="project-header" onclick="toggleProject(this)">
+                            <h3>国家自然科学基金青年项目</h3>
+                            <span class="date">2022.10 - 2023.08</span>
+                            <i class="fas fa-chevron-down toggle-icon"></i>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">GAN</span>
+                                <span class="tag">零样本学习</span>
+                                <span class="tag">对比学习</span>
+                                <span class="tag">工业应用</span>
+                            </div>
+                            <p class="project-description">
+                                面向新视觉特征合成与关联知识生成的零次学习研究，达到该领域当前最优性能（SOTA）。
+                            </p>
+                            <ul class="project-achievements">
+                                <li>提出GAN与CL融合的创新广义零样本学习（ZSL）方法，达到该领域当前最优性能（SOTA）</li>
+                                <li>设计反馈对齐模块（FAM），缓解生成器中语义-视觉不一致问题，经消融实验验证可有效提升ZSL性能</li>
+                                <li>提出负样本对齐模块（NAM），解决对比学习阶段的语义-视觉错位问题</li>
+                                <li>构建钢材缺陷语义知识库：将裂缝形态学特征编码为机器可理解的描述向量</li>
+                                <li>开发轻量化推理模型：将多模态方法拓展到工业钢材生产的裂缝检测中，支持零样本缺陷识别</li>
+                            </ul>
+                            <div class="project-demo">
+                                <strong>学术成果:</strong> SCI Q2论文，期刊：Image and Vision Computing
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-item">
+                        <div class="project-header" onclick="toggleProject(this)">
+                            <h3>汉考国际科研基金项目</h3>
+                            <span class="date">2021.09 - 2022.03</span>
+                            <i class="fas fa-chevron-down toggle-icon"></i>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">BERT</span>
+                                <span class="tag">NLP</span>
+                                <span class="tag">大模型</span>
+                                <span class="tag">语言评估</span>
+                            </div>
+                            <p class="project-description">
+                                基于深度学习的新HSK作文自动评分算法研究，利用BERT模型实现动态助词使用准确率评估。
+                            </p>
+                            <ul class="project-achievements">
+                                <li>针对汉语动态助词自然语言生成（NLG）需求，结合汉语教学评估痛点，提出应用3种高效深度学习模型</li>
+                                <li>分析3类典型汉语动态助词，总结其教与学中的结构、错误特征，提炼句法语义属性与句式分布规律</li>
+                                <li>构建高质量数据集，从微博、CUC_Paraconc语料中提取含动态助词的句子，结合标准语料库优化数据质量</li>
+                            </ul>
+                            <div class="project-demo">
+                                <strong>学术成果:</strong> EI会议论文，ICNLP
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-item">
+                        <div class="project-header" onclick="toggleProject(this)">
+                            <h3>国家自然科学基金地区项目</h3>
+                            <span class="date">2020.10 - 2022.06</span>
+                            <i class="fas fa-chevron-down toggle-icon"></i>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">机器学习</span>
+                                <span class="tag">GNN</span>
+                                <span class="tag">网络安全</span>
+                            </div>
+                            <p class="project-description">
+                                数据与知识双向驱动的非智能物联设备发现方法研究，聚焦IoT设备安全接入需求。
+                            </p>
+                            <ul class="project-achievements">
+                                <li>基于设备网络流量静态特征，采用传统机器学习、集成学习（Boosting）及模型融合策略构建分类方案</li>
+                                <li>针对网络设备抓包流量，将问题建模为图结构问题（IoT设备多源节点关系）</li>
+                                <li>基于GNN设计Botnet检测与溯源系统，提取源IP/端口、目的IP/端口等高维特征，实现攻击源98%准确率的精准定位</li>
+                            </ul>
+                            <div class="project-demo">
+                                <strong>项目成果:</strong> 专利：基于深度学习的Botnet攻击C&C服务器溯源方法；EI会议论文
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- 教育背景 -->
+            <section class="section education-section">
+                <h2 class="section-title">
+                    <i class="fas fa-graduation-cap"></i>
+                    教育背景
+                </h2>
+                <div class="section-content">
+                    <div class="education-item">
+                        <div class="education-header">
+                            <h3>计算机科学与技术</h3>
+                            <span class="school">东南大学（985）</span>
+                            <span class="date">2023.09 - 2026.07</span>
+                        </div>
+                        <div class="education-content">
+                            <p>硕士研究生在读 • 研究方向：类脑大模型/全脑自动化重建/VR地图</p>
+                            <p>主要课程：深度学习、机器学习、计算机视觉、自然语言处理</p>
+                        </div>
+                    </div>
+                    
+                    <div class="education-item">
+                        <div class="education-header">
+                            <h3>网络空间安全</h3>
+                            <span class="school">云南大学（211）</span>
+                            <span class="date">2019.08 - 2023.07</span>
+                        </div>
+                        <div class="education-content">
+                            <p>本科 • 学士学位 • 综合成绩: 94.9 • 专业排名: 2/101</p>
+                            <p>主要课程：数据结构、算法设计、网络安全、密码学、系统安全</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- 专业竞赛 -->
+            <section class="section competitions-section">
+                <h2 class="section-title">
+                    <i class="fas fa-trophy"></i>
+                    专业竞赛
+                </h2>
+                <div class="section-content">
+                    <div class="competition-grid">
+                        <div class="competition-item">
+                            <div class="competition-award">全国二等奖 + 最佳应用奖</div>
+                            <div class="competition-name">中国高校计算机大赛-人工智能创意赛</div>
+                            <div class="competition-year">2023年</div>
+                            <div class="competition-role">队长</div>
+                        </div>
+                        <div class="competition-item">
+                            <div class="competition-award">全国三等奖</div>
+                            <div class="competition-name">中国研究生数学建模大赛</div>
+                            <div class="competition-year">2023年</div>
+                            <div class="competition-role">队长</div>
+                        </div>
+                        <div class="competition-item">
+                            <div class="competition-award">省冠军</div>
+                            <div class="competition-name">团体程序设计天梯赛</div>
+                            <div class="competition-year">2022年</div>
+                            <div class="competition-role">团队成员</div>
+                        </div>
+                        <div class="competition-item">
+                            <div class="competition-award">省级二等奖</div>
+                            <div class="competition-name">蓝桥杯C/C++程序设计大学组</div>
+                            <div class="competition-year">2022年</div>
+                            <div class="competition-role">个人</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
