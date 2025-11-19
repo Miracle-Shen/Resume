@@ -5,95 +5,82 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
-    background: #f8f9fa;
-    min-height: 100vh;
+    background: #f5f5f5;
 }
 
 .container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 20px auto;
     display: grid;
     grid-template-columns: 300px 1fr;
-    min-height: 100vh;
-    gap: 0;
     background: white;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
 }
 
 /* 侧边栏样式 */
 .sidebar {
-    background: #2c3e50;
+    background: #333;
     color: white;
-    padding: 2rem 1.5rem;
-    position: relative;
+    padding: 20px;
 }
 
 .profile-section {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 20px;
 }
 
 .avatar {
-    width: 100px;
-    height: 100px;
-    background: #34495e;
+    width: 80px;
+    height: 80px;
+    background: #555;
     border-radius: 50%;
-    margin: 0 auto 1rem;
+    margin: 0 auto 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .name {
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
 }
 
 .title {
     font-size: 1rem;
-    opacity: 0.9;
-    font-weight: 300;
-    letter-spacing: 1px;
-    margin-bottom: 0.5rem;
+    margin-bottom: 5px;
 }
 
 .subtitle {
     font-size: 0.9rem;
     opacity: 0.8;
-    font-weight: 300;
 }
 
 .contact-section, .skills-section, .awards-section {
-    margin-bottom: 2rem;
+    margin-bottom: 20px;
 }
 
 .contact-section h2, .skills-section h2, .awards-section h2 {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    color: #ecf0f1;
-    border-bottom: 2px solid #95a5a6;
-    padding-bottom: 0.5rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #555;
+    padding-bottom: 5px;
 }
 
 .contact-item {
     display: flex;
     align-items: center;
-    margin-bottom: 0.8rem;
+    margin-bottom: 8px;
 }
 
 .contact-item i {
     width: 20px;
-    margin-right: 1rem;
-    color: #95a5a6;
+    margin-right: 10px;
+    color: #ccc;
 }
 
 .contact-item span {
@@ -101,42 +88,39 @@ body {
 }
 
 .skill-item {
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
 }
 
 .skill-name {
     display: block;
-    margin-bottom: 0.3rem;
+    margin-bottom: 3px;
     font-size: 0.9rem;
-    font-weight: 500;
 }
 
 .skill-bar {
     height: 6px;
-    background: rgba(255, 255, 255, 0.2);
+    background: #555;
     border-radius: 3px;
     overflow: hidden;
-    position: relative;
 }
 
 .skill-level {
     height: 100%;
-    background: #34495e;
+    background: #888;
     border-radius: 3px;
     width: 0;
 }
 
-/* 奖项部分样式 */
 .award-item {
     display: flex;
     align-items: center;
-    margin-bottom: 0.8rem;
+    margin-bottom: 8px;
 }
 
 .award-item i {
     width: 20px;
-    margin-right: 1rem;
-    color: #f39c12;
+    margin-right: 10px;
+    color: #ffa500;
 }
 
 .award-item span {
@@ -145,70 +129,50 @@ body {
 
 /* 主内容区域样式 */
 .main-content {
-    padding: 2rem;
+    padding: 20px;
     background: white;
-    overflow-y: auto;
 }
 
 .section {
-    margin-bottom: 3rem;
+    margin-bottom: 30px;
 }
-
-/* 去掉进入动画 */
 
 .section-title {
-    font-size: 1.5rem;
-    color: #2c3e50;
-    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 15px;
     display: flex;
     align-items: center;
-    border-bottom: 3px solid #2c3e50;
-    padding-bottom: 0.5rem;
-    position: relative;
-}
-
-.section-title::after {
-    content: '';
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    width: 50px;
-    height: 3px;
-    background: #7f8c8d;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
 }
 
 .section-title i {
-    margin-right: 0.8rem;
-    color: #2c3e50;
-    font-size: 1.3rem;
+    margin-right: 8px;
+    color: #333;
+    font-size: 1.2rem;
 }
 
 .section-content {
     color: #555;
-    line-height: 1.8;
+    line-height: 1.6;
 }
 
 .about-section p {
-    font-size: 1.1rem;
-    text-align: justify;
-    background: #f8f9fa;
-    padding: 1.5rem;
-    border-radius: 10px;
-    border-left: 4px solid #2c3e50;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 3px solid #333;
 }
 
 /* 工作经历样式 */
 .experience-item {
-    margin-bottom: 2rem;
-    background: #f8f9fa;
-    padding: 1.5rem;
-    border-radius: 10px;
-    border-left: 4px solid #2c3e50;
-}
-
-.experience-item:hover {
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 3px solid #333;
 }
 
 .experience-header {
@@ -216,49 +180,44 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1rem;
-    gap: 0.5rem;
+    margin-bottom: 10px;
+    gap: 5px;
 }
 
 .experience-header h3 {
-    color: #2c3e50;
-    font-size: 1.2rem;
-    font-weight: 600;
+    color: #333;
+    font-size: 1.1rem;
 }
 
 .company {
-    color: #34495e;
-    font-weight: 500;
+    color: #555;
     font-size: 1rem;
 }
 
 .date {
-    background: #2c3e50;
+    background: #333;
     color: white;
-    padding: 0.3rem 0.8rem;
-    border-radius: 15px;
+    padding: 3px 8px;
+    border-radius: 3px;
     font-size: 0.85rem;
-    font-weight: 500;
 }
 
 .work-summary {
-    background: #ecf0f1;
-    padding: 1rem;
-    border-radius: 8px;
-    margin-bottom: 1rem;
+    background: #f0f0f0;
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 10px;
     font-style: italic;
-    border-left: 3px solid #34495e;
 }
 
 .project-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 15px;
 }
 
 .project-group h4 {
-    color: #2c3e50;
+    color: #333;
     font-size: 1rem;
-    margin-bottom: 0.5rem;
-    font-weight: 600;
+    margin-bottom: 5px;
 }
 
 .experience-content ul {
@@ -268,60 +227,53 @@ body {
 
 .experience-content li {
     position: relative;
-    padding-left: 1.5rem;
-    margin-bottom: 0.5rem;
+    padding-left: 15px;
+    margin-bottom: 5px;
     color: #555;
 }
 
 .experience-content li::before {
-    content: '▶';
+    content: '•';
     position: absolute;
     left: 0;
-    color: #2c3e50;
-    font-size: 0.8rem;
+    color: #333;
 }
 
 /* 项目经历样式 */
 .project-item {
-    margin-bottom: 2rem;
+    margin-bottom: 20px;
     background: white;
-    border: 1px solid #e1e8ed;
-    border-radius: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
     overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-}
-
-.project-item:hover {
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .project-header {
-    padding: 1.5rem;
-    background: #2c3e50;
+    padding: 15px;
+    background: #333;
     color: white;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
 }
 
 .project-header:hover {
-    background: #34495e;
+    background: #555;
 }
 
 .project-header h3 {
-    font-size: 1.3rem;
-    font-weight: 600;
+    font-size: 1.1rem;
 }
 
 .project-header .date {
-    background: rgba(255, 255, 255, 0.2);
+    background: #555;
     color: white;
 }
 
 .toggle-icon {
-    margin-left: 1rem;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
 }
 
 .project-header.active .toggle-icon {
@@ -329,7 +281,7 @@ body {
 }
 
 .project-content {
-    padding: 0 1.5rem;
+    padding: 0 15px;
     max-height: 0;
     overflow: hidden;
     opacity: 0;
@@ -337,36 +289,35 @@ body {
 }
 
 .project-content.active {
-    padding: 1.5rem;
+    padding: 15px;
     opacity: 1;
     max-height: 1000px;
 }
 
 .project-tags {
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 5px;
 }
 
 .tag {
-    background: #34495e;
+    background: #666;
     color: white;
-    padding: 0.3rem 0.8rem;
-    border-radius: 20px;
+    padding: 3px 8px;
+    border-radius: 3px;
     font-size: 0.8rem;
-    font-weight: 500;
     display: inline-block;
 }
 
 .project-description {
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
     color: #666;
     font-style: italic;
-    background: #f8f9fa;
-    padding: 1rem;
-    border-radius: 8px;
-    border-left: 3px solid #2c3e50;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 3px;
+    border-left: 3px solid #333;
 }
 
 .project-achievements {
@@ -376,8 +327,8 @@ body {
 
 .project-achievements li {
     position: relative;
-    padding-left: 1.5rem;
-    margin-bottom: 0.5rem;
+    padding-left: 15px;
+    margin-bottom: 5px;
     color: #555;
 }
 
@@ -385,23 +336,20 @@ body {
     content: '✓';
     position: absolute;
     left: 0;
-    color: #2c3e50;
-    font-weight: bold;
-    font-size: 1rem;
+    color: #333;
 }
 
 .project-demo {
-    margin-top: 1rem;
-    padding: 0.8rem;
-    background: #ecf0f1;
-    border-radius: 8px;
+    margin-top: 10px;
+    padding: 8px;
+    background: #f0f0f0;
+    border-radius: 3px;
     font-size: 0.9rem;
 }
 
 .project-demo a {
-    color: #2c3e50;
+    color: #333;
     text-decoration: none;
-    font-weight: 500;
 }
 
 .project-demo a:hover {
@@ -410,16 +358,12 @@ body {
 
 /* 教育背景样式 */
 .education-item {
-    background: #ecf0f1;
-    color: #2c3e50;
-    padding: 1.5rem;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-    border-left: 4px solid #34495e;
-}
-
-.education-item::before {
-    display: none;
+    background: #f0f0f0;
+    color: #333;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border-left: 3px solid #666;
 }
 
 .education-header {
@@ -427,76 +371,67 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
 }
 
 .education-header h3 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #2c3e50;
+    font-size: 1.1rem;
+    color: #333;
 }
 
 .school {
-    font-weight: 500;
-    color: #34495e;
+    color: #666;
 }
 
 .education-content {
-    margin-top: 1rem;
+    margin-top: 10px;
 }
 
 .education-content p {
-    margin-bottom: 0.5rem;
+    margin-bottom: 5px;
     color: #555;
 }
 
 /* 专业竞赛样式 */
 .competition-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
 }
 
 .competition-item {
     background: white;
-    padding: 1.5rem;
-    border-radius: 10px;
-    border: 2px solid #ecf0f1;
-    position: relative;
-}
-
-.competition-item:hover {
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    border-color: #bdc3c7;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
 }
 
 .competition-award {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #2c3e50;
-    margin-bottom: 0.5rem;
-    padding: 0.5rem;
-    background: #f8f9fa;
-    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+    padding: 5px;
+    background: #f9f9f9;
+    border-radius: 3px;
     text-align: center;
 }
 
 .competition-name {
-    font-size: 0.95rem;
-    color: #34495e;
-    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 5px;
     line-height: 1.4;
 }
 
 .competition-year {
     font-size: 0.9rem;
-    color: #7f8c8d;
-    margin-bottom: 0.3rem;
+    color: #888;
+    margin-bottom: 3px;
 }
 
 .competition-role {
     font-size: 0.85rem;
-    color: #95a5a6;
+    color: #aaa;
     font-style: italic;
 }
 
@@ -504,57 +439,40 @@ body {
 @media (max-width: 768px) {
     .container {
         grid-template-columns: 1fr;
-        max-width: 100%;
-        margin: 0;
-        border-radius: 0;
+        margin: 10px;
     }
     
     .sidebar {
-        padding: 1.5rem 1rem;
+        padding: 15px 10px;
     }
     
     .main-content {
-        padding: 1.5rem 1rem;
+        padding: 15px 10px;
     }
     
-    .experience-header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    .project-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
-    }
-    
+    .experience-header,
+    .project-header,
     .education-header {
         flex-direction: column;
         align-items: flex-start;
     }
     
     .section-title {
-        font-size: 1.3rem;
-    }
-    
-    .name {
-        font-size: 1.5rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .avatar {
-        width: 80px;
-        height: 80px;
-        font-size: 2rem;
-    }
-    
-    .section-title {
         font-size: 1.2rem;
     }
     
-    .project-tags {
-        justify-content: center;
+    .name {
+        font-size: 1.3rem;
+    }
+    
+    .avatar {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+    
+    .competition-grid {
+        grid-template-columns: 1fr;
     }
 }
 
